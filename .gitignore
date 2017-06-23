@@ -1,4 +1,6 @@
 # ignore keys
 keys.py
 # ignore cache
-/__pycache__/
+/__pycache__
+# ignore lambda folder
+/WeatherAlertsDC/
