@@ -1,0 +1,4 @@
+# ignore keys
+keys.py
+# ignore cache
+/__pycache__/
