@@ -16,10 +16,11 @@ class Bot(object):
         self.today = Weather.Forecast()
 
     def create_tweet(self):
-        self.tweet = str(self.today.date) + ": Temp High: " + str(self.today.high) + " Low: " + str(self.today.low) + " Humidity: " + \
-                     str(self.today.humidity) + " Condition: " + self.today.conditions
+        self.tweet = "Good morning, it is " + str(self.today.date) + ": Temp High: " \
+                     + str(self.today.high) + "F Low: " + str(self.today.low) + "F, AVG Humidity: " \
+                     + str(self.today.humidity) + "%, Chance of rain: " + self.today.pop + "%."
 
     def post_tweet(self):
-        print(self.tweet)
+        # print(self.tweet)
         self.api.update_status(status=str(self.tweet))
 
